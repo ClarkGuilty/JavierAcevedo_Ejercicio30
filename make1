@@ -1,0 +1,7 @@
+ej29b: 
+	gcc -o satan.x non_linear_advection.c -fopenmp
+	./satan.x
+	python plots1.py
+	rm dat*.txt
+	rm satan.x
+

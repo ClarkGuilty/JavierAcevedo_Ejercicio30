@@ -1,0 +1,7 @@
+ej30b: 
+	gcc -o satan.x walk.c -fopenmp
+	./satan.x > serial.txt
+	python plots2.py
+	rm serial.txt
+	rm satan.x
+
